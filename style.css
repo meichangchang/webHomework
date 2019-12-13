@@ -1,0 +1,95 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+ul,li{
+	list-style: none;
+}
+#top{
+	height:20px;
+	position:relative;
+	overflow:hidden;
+	background:#ccc;
+}
+#top>img{
+	margin-left: 170px;
+}
+.bottom{
+	height: 20px;
+	width: 900px;
+	overflow:hidden;
+	position:absolute;
+	top:-2px;
+	background:#ccc;
+	margin-left: 200px;
+}
+#word{
+	width: 280px;
+	color: red;
+	font-size: 10px;
+	display: block;
+	overflow:hidden;
+	position: absolute;
+	top:4px;
+	right:-100px;
+}
+.box{
+	width:1200px;
+	height:382px;
+	border:1px solid none;
+	margin:20px auto;
+	position:relative;
+	overflow:hidden;
+}
+.slider{
+	width:8400px;
+	position:absolute;
+	left:-1200px;
+}
+.slide{
+	width:1200px;
+	overflow:hidden;
+	float:left;
+}
+.box>span{
+	display:block;
+	width:30px;
+	height:50px;
+	text-align:center;
+	cursor:pointer;
+	top:175px;
+	color: white;
+	line-height:50px;
+	background:red;
+	font-size:30px;
+	position:absolute;
+	opacity:0;
+}
+#left{
+	left:30px;
+}
+#right{
+	right:30px;
+}
+.num{
+	position:absolute;
+	left:500px;
+	bottom:20px;
+}
+.num>li{
+	float:left;
+	width:20px;
+	height:20px;
+	background:#ccc;
+	cursor:pointer;
+	margin:-10px 10px;
+	border-radius:50%;
+	display: block;
+	font-size:10px;
+	text-align: center;
+	padding-top:4px;
+}
+.num .active{
+	background:red;
+	color:white;
+}
