@@ -10,9 +10,9 @@ var isMoving=false;
 setInterval(start,280);
 function start() {
     ind++;
-    animate(word,{right:-100+10*ind},function(){
-    	if(ind===90){
-    		word.style.right="-100px";
+    animate(word,{right:-300+10*ind},function(){
+    	if(ind===110){
+    		word.style.right="-300px";
     		ind=1;
     	}
     });
