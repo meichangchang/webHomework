@@ -54,24 +54,40 @@ function animate(obj,json,callback){
 	}, 30)
 }
 function next(){
-    index++;
     nummove();
-    animate(slider,{left:-1200*index},function(){
-    	if(index===6){
-    		slider.style.left="-1200px";
-    		index=1;
-    	}
-    });
+    if(index!=6){
+        index++;
+        nummove();
+    }
+    if(index!=6){
+        animate(slider,{left:-1200*index});
+    }
+    if(index===6){
+        animate(slider,{left:-1200*index},function(){
+    	   if(index===6){
+    		  slider.style.left="-1200px";
+    		  index=1;
+    	   }
+        });
+    }
 }
 function prev(){
-    index--;
     nummove();
-    animate(slider,{left:-1200*index},function(){
-    	if(index===0){
-    		slider.style.left="-6000px";
-    		index=5;
-    	}
-    });
+    if(index!=0){
+        index--;
+        nummove();
+    }
+    if(index!=0){
+        animate(slider,{left:-1200*index});
+    }
+    if(index===0){
+        animate(slider,{left:-1200*index},function(){
+            if(index===0){
+    		  slider.style.left="-6000px";
+    		  index=5;
+            }
+        });
+    }
 }
 var timer=setInterval(next,3000);
 box.onmouseover=function(){
